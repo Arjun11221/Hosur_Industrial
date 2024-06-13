@@ -23,23 +23,20 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
-              className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
-            >
-              About
-            </Link>
-            <Link
-              to="/services"
-              className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
-            >
-              Services
-            </Link>
-            <Link
               to="/contact"
               className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
             >
               Contact
+            </Link> 
+            <Link
+              to="/products"
+              className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
+            >
+              Products
             </Link>
+            
+            
+            
           </div>
         </div>
         <div className="hidden sm:flex items-center space-x-4 sm:space-x-8">

@@ -17,7 +17,7 @@ const Footer = () => {
             Krishnagiri, Tamil Nadu - 635114
           </p>
           <p className="text-base mt-4">
-            Email : hosurindustrialgases@gmail.com, ceo@hosurgases.com,  jmd@hosurgases.com, marketting@hosurgases.com, sales@hosurgases.com, purchase@hosurgases.com
+            Email : hosurindustrialgases@gmail.com, ceo@hosurgases.com,  jmd@hosurgases.com, marketing@hosurgases.com, sales@hosurgases.com, purchase@hosurgases.com
           </p>
           <p className="text-base mt-4">
             Phone : +919751860675, +919688532071, +49 15145096097, +628996347525
