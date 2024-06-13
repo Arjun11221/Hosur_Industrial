@@ -3,7 +3,7 @@ import { PRODUCTS } from "../utils/productDesc";
 
 const Products = () => {
   return (
-    <div className="flex mt-20 ml-32 flex-wrap">
+    <div className="flex mt-20 ml-7 sm:ml-32 flex-wrap">
       {PRODUCTS.map((product) => (
         <div
           key={product.id}
