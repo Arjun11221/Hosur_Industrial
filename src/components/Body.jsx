@@ -1,5 +1,6 @@
 import React from 'react';
 import backimage2 from "../assets/backgoundimage2.jpg";
+import { Link } from 'react-router-dom';
 
 const Body = () => {
   return (
@@ -11,7 +12,7 @@ const Body = () => {
         <div className="text-center text-white">
           <h1 className="text-3xl sm:text-5xl font-bold mb-4">HOSUR INDUSTRIAL GASES</h1>
           <p className="text-lg sm:text-xl font-semibold mb-8">One man's scrap is another man's goldmine.</p>
-          <button className="px-4 py-2 font-medium bg-blue-600 hover:bg-blue-700 rounded">Make Inquiry</button>
+          <Link to="/contact" ><button className="px-4 py-2 font-medium bg-blue-600 hover:bg-blue-700 rounded">Make Inquiry</button></Link>
         </div>
       </div>
     </div>
