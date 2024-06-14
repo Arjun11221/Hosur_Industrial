@@ -5,7 +5,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <nav className="bg-black p-4 shadow-lg">
+    <nav className="fixed top-0 w-full bg-black opacity-90 p-4 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/">
@@ -22,21 +22,19 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
-              to="/contact"
-              className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
-            >
-              Contact
-            </Link> 
+           
             <Link
               to="/products"
               className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
             >
               Products
             </Link>
-            
-            
-            
+            <Link
+              to="/contact"
+              className="text-white font-semibold text-sm sm:text-base hover:text-gray-300 transition duration-300 ease-in-out"
+            >
+              Contact
+            </Link>
           </div>
         </div>
         <div className="hidden sm:flex items-center space-x-4 sm:space-x-8">

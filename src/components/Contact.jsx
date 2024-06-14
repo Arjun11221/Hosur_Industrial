@@ -21,21 +21,24 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_952kjj8", // Replace with your EmailJS service ID
-        "template_bgzfajz", // Replace with your EmailJS template ID
-        formData,
-        "2WHBbnZlFqJMy8fCn" // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          toast.success("Message Sent Successfully");
-        },
-        (error) => {
-          toast.error("Failed to send message.")
-        }
-      );
+    const serviceId = "service_eipahaj";
+    const templateId = "template_o22fk4p";
+    const publicKey = "oFawTOzCEWCPzDSjl";
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      to_name: "Arjun",
+      message: formData.message,
+    };
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (result) => {
+        toast.success("Message Sent Successfully");
+      },
+      (error) => {
+        toast.error("Failed to send message.");
+      }
+    );
     setFormData({
       name: "",
       email: "",
@@ -46,13 +49,14 @@ function ContactForm() {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 py-10">
+      <div className="bg-gray-100 mt-24 py-10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800">GET IN TOUCH</h2>
             <p className="text-gray-600 mt-2">CONTACT US TO GET MORE INFO</p>
             <p className="text-gray-600 mt-1">
-              We are happy to read from you anytime. Please use the form below to contact us.
+              We are happy to read from you anytime. Please use the form below
+              to contact us.
             </p>
           </div>
           <div className="grid grid-cols-1 my-20  md:grid-cols-2 gap-8">
@@ -64,9 +68,15 @@ function ContactForm() {
               />
             </div>
             <div>
-              <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-16">
+              <form
+                onSubmit={handleSubmit}
+                className="bg-white shadow-md rounded-lg p-16"
+              >
                 <div className="mb-6">
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Name
                   </label>
                   <input
@@ -80,7 +90,10 @@ function ContactForm() {
                   />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Email
                   </label>
                   <input
@@ -94,7 +107,10 @@ function ContactForm() {
                   />
                 </div>
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Message
                   </label>
                   <textarea
@@ -117,7 +133,7 @@ function ContactForm() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

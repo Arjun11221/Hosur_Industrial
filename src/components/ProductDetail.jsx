@@ -11,7 +11,7 @@ const ProductDetail = () => {
   return (
     <>
       <Navbar />
-      <div className="relative h-72">
+      <div className="relative mt-24 h-72">
       <div className="absolute inset-0">
         <img src={image} alt="Background" className="w-full h-full object-cover" />
       </div>
