@@ -49,7 +49,7 @@ function ContactForm() {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 mt-24 py-10">
+      <div className="bg-gray-100 md:mt-24 mt-40 py-10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800">GET IN TOUCH</h2>

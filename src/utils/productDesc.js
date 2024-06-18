@@ -9,7 +9,7 @@ import image7 from "../assets/milcopper.jpg";
 export const PRODUCTS = [
   {
     id: 1,
-    title: "Millberry Copper Wire",
+    title: "Millberry Copper Wire 99.99%",
     image: image7,
   },
   {
@@ -49,7 +49,7 @@ export const PRODUCTS = [
 export const PRODUCTSDETAIL = [
   {
     id: 1,
-    title: "Millberry Copper Wire",
+    title: "Millberry Copper Wire 99.99%",
     image:image7,
     description: "The Copper Wire Scrap, we offer, is widely used in industries for re-melting and formulating new copper products. Excellent quality, corrosion resistant and purity are some of the main attributes of our Copper Wire Scrap. We make available Copper Millberry Wire Scrap in different sizes and quantities so as to meet the diverse demands of buyers. Contact us for more details and Specifications",
   },

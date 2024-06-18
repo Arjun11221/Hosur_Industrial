@@ -5,7 +5,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full bg-black opacity-90 p-4 shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-gray-800 opacity-90 p-4 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/">
